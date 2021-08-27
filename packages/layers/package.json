@@ -1,0 +1,33 @@
+{
+  "name": "@parcel-test/layers",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Layers",
+  "license": "UNLICENSED",
+  "main": "dist/main/index.js",
+  "module": "dist/module/index.js",
+  "source": "src/index.ts",
+  "types": "src/index.d.ts",
+  "browserslist": "> 2%",
+  "dependencies": {
+    "@deck.gl/core": "^8.5.5",
+    "@deck.gl/layers": "^8.5.5"
+  },
+  "peerDependencies": {
+    "@deck.gl/core": "^8.5.5"
+  },
+  "targets": {
+    "types": false,
+    "main": {
+      "includeNodeModules": [
+        "@parcel-test/layers"
+      ]
+    },
+    "module": {
+      "includeNodeModules": [
+        "@parcel-test/layers"
+      ]
+    }
+  },
+  "webpackEntry": "src/index.ts"
+}
